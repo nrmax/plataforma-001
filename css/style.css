@@ -149,18 +149,13 @@ a {
 }
 
 .logo {
-    font-family: var(--font-heading);
-    font-size: 24px;
-    font-weight: 600;
-    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
 }
 
-.logo .yellow-text {
-    color: var(--yellow);
-}
-
-.logo .white-text {
-    color: var(--white);
+.logo-img {
+    height: 24px;
+    width: auto;
 }
 
 .nav {
