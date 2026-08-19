@@ -118,14 +118,14 @@ a {
 }
 
 .section-subtitle {
-    font-size: 17px;
+    font-size: 19px;
     margin-bottom: 25px;
     line-height: 1.8;
 }
 
 .section-subtitle ul,
 .section-subtitle li {
-    font-size: 17px;
+    font-size: 19px;
     line-height: 1.8;
 }
 
@@ -682,12 +682,12 @@ a {
     }
 
     .section-subtitle {
-        font-size: 15px;
+        font-size: 17px;
     }
 
     .section-subtitle ul,
     .section-subtitle li {
-        font-size: 15px;
+        font-size: 17px;
     }
 
     .split-content {
