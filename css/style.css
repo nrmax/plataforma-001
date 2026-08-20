@@ -770,12 +770,12 @@ a {
     }
 
     #clientes .split-content {
-        text-align: center;
+        text-align: left;
     }
 
     .split-content {
         padding: 40px 20px;
-        text-align: center;
+        text-align: left;
     }
 
     .split-image-half {
