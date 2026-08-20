@@ -354,36 +354,55 @@ a {
     100% { transform: translateY(15px); opacity: 0; }
 }
 
-/* Split Layout Generic */
+/* Split Section Layout */
 .split-section {
     display: flex;
     min-height: 600px;
+    width: 100%;
 }
 
 .split-half {
-    flex: 0.6;
+    flex: 1;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 .split-image-half {
     position: relative;
-    flex: 0.4;
+    overflow: hidden;
 }
 
 .split-image-half img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: block;
 }
 
 .split-content {
-    padding: 80px 10%;
+    padding: 80px 5%;
     max-width: 600px;
+}
+
+.split-content .section-title {
+    font-size: 42px;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.split-content .section-subtitle {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.split-content .section-subtitle strong {
+    color: #1a1a1a;
+    font-weight: 700;
 }
 
 /* Players / Serviços Section (Yellow) */
@@ -613,15 +632,15 @@ a {
 @media (max-width: 992px) {
     .split-section {
         flex-direction: column;
+        min-height: auto;
     }
 
     .split-half {
-        min-height: 400px;
+        width: 100%;
     }
 
     .split-image-half {
-        flex: 0.4;
-        min-height: 300px;
+        height: 400px;
     }
 
     .logos-grid {
@@ -709,7 +728,7 @@ a {
     }
 
     .split-image-half {
-        min-height: 250px;
+        height: 300px;
     }
 
     .form-container {
@@ -1004,19 +1023,4 @@ a {
     }
 }
 
-/* Ajuste de layout para a seção de Envio e Montagem após remoção dos boxes */
-#clientes .split-half {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
 
-#clientes .split-content {
-    text-align: left;
-    margin: 0 auto;
-}
-
-#clientes .section-title {
-    text-align: center;
-}
