@@ -1,6 +1,4 @@
-git add .
-git commit -m "Descrição da alteração"
-git push
+git add, git commit e git push
 
 
 
