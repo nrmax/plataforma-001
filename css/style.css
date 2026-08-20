@@ -357,7 +357,7 @@ a {
 /* Split Section Layout */
 .split-section {
     display: flex;
-    min-height: 600px;
+    min-height: 450px;
     width: 100%;
 }
 
@@ -640,7 +640,7 @@ a {
     }
 
     .split-image-half {
-        height: 400px;
+        height: 350px;
     }
 
     .logos-grid {
@@ -728,7 +728,7 @@ a {
     }
 
     .split-image-half {
-        height: 300px;
+        height: 280px;
     }
 
     .form-container {
@@ -1021,6 +1021,14 @@ a {
     .faq-answer p {
         font-size: 14px;
     }
+}
+
+/* Ajuste de layout para a seção de Envio e Montagem */
+#clientes .split-image-half img {
+    max-height: 450px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 
