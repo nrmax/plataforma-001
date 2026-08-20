@@ -155,6 +155,10 @@ a {
     letter-spacing: 1px;
 }
 
+.logo-img {
+    height: 55px;
+}
+
 .logo .yellow-text {
     color: var(--yellow);
 }
@@ -703,7 +707,7 @@ a {
         justify-content: center;
     }
 
-    .logo img {
+    .logo-img {
         height: 32px;
     }
 
