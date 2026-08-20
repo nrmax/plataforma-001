@@ -826,6 +826,7 @@ a {
     #clientes .split-content {
         text-align: left;
         padding-top: 30px !important;
+        padding-bottom: 0 !important;
     }
 
     .split-content {
