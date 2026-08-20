@@ -753,6 +753,7 @@ a {
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 20px;
     }
 
     .split-image-half img {
@@ -760,17 +761,34 @@ a {
         max-width: 100%;
         height: 250px;
         object-fit: contain;
+        display: block;
         margin: 0 auto;
+    }
+
+    #compatibilidade .split-image-half,
+    #clientes .split-image-half {
+        height: auto;
+        min-height: 250px;
+        padding: 20px;
     }
 
     #compatibilidade .split-image-half img,
     #clientes .split-image-half img {
         height: 250px;
+        width: auto;
+        max-width: 100%;
         object-fit: contain;
+        display: block;
+        margin: 0 auto;
     }
 
     #clientes .split-content {
         text-align: left;
+    }
+
+    #compatibilidade .split-image-half img,
+    #clientes .split-image-half img {
+        margin-left: 0 !important;
     }
 
     .split-content {
