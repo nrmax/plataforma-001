@@ -976,3 +976,20 @@ a {
         font-size: 16px;
     }
 }
+
+/* Ajuste de layout para a seção de Envio e Montagem após remoção dos boxes */
+#clientes .split-half {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#clientes .split-content {
+    text-align: left;
+    margin: 0 auto;
+}
+
+#clientes .section-title {
+    text-align: center;
+}
