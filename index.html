@@ -18,7 +18,7 @@
     <header class="header">
         <div class="container">
             <div class="logo">
-                <img src="assets/images/logo.png" alt="NRmax Logo" style="height: 40px;">
+                <img src="assets/images/logo-nrmax.png" alt="NRmax Logo" style="height: 40px;">
             </div>
             <div class="nav">
                 <ul class="nav-links">
@@ -191,6 +191,63 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-header">
+                <span class="text-muted">F.A.Q</span>
+                <h2 class="section-title">PERGUNTAS FREQUENTES</h2>
+                <p class="section-subtitle">Tire suas dúvidas sobre nossas plataformas elevatórias.</p>
+            </div>
+            <div class="faq-content">
+                <div class="faq-left">
+                    <span class="text-muted">Lorem ipsum dolor</span>
+                    <h2 class="faq-subtitle">Tem Alguma Pergunta?</h2>
+                    <p>Entre em contato conosco para esclarecer qualquer dúvida sobre nossos produtos e serviços.</p>
+                    <a href="https://wa.me/5511996272376" target="_blank" class="btn btn-yellow btn-pulse mt-3">FALE CONOSCO</a>
+                </div>
+                <div class="faq-right">
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            <span class="faq-icon">?</span>
+                            Qual é a capacidade de carga da plataforma?
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nossa plataforma possui capacidade de até 600 kg, com velocidade de elevação de 10 m/min para 300 kg e 5 m/min para 600 kg.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            <span class="faq-icon">?</span>
+                            Qual é a altura máxima de elevação?
+                        </button>
+                        <div class="faq-answer">
+                            <p>A plataforma atinge uma altura máxima de elevação de 3 metros, ideal para mezaninos e docas.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            <span class="faq-icon">?</span>
+                            A plataforma possui segurança?
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim! Possui duplo fim de curso de parada e segurança, telas de proteção nas guias e na plataforma, garantindo operação segura.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            <span class="faq-icon">?</span>
+                            Qual o nível de ruído da operação?
+                        </button>
+                        <div class="faq-answer">
+                            <p>O sistema opera com baixo nível de ruído, aproximadamente 45 dB, proporcionando uma operação confortável.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer (Reference: Social Links at bottom) -->
     <footer class="footer">
         <div class="container">
@@ -202,6 +259,19 @@
     </footer>
 
     <script>
+        function toggleFaq(button) {
+            const faqItem = button.parentElement;
+            const isActive = faqItem.classList.contains('active');
+            
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            if (!isActive) {
+                faqItem.classList.add('active');
+            }
+        }
+
         function enviarWhatsApp(event) {
             event.preventDefault();
             const nome = document.getElementById('nome').value;
