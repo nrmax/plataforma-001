@@ -273,7 +273,7 @@ a {
 
 .cargo-title {
     font-family: var(--font-heading);
-    font-size: 100px;
+    font-size: 30px;
     line-height: 0.9;
     font-style: italic;
     margin-bottom: 20px;
