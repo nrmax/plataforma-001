@@ -703,6 +703,10 @@ a {
         justify-content: center;
     }
 
+    .logo img {
+        height: 40px;
+    }
+
     .cargo-banner {
         min-height: auto;
         padding: 80px 0 30px;
