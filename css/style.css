@@ -1025,10 +1025,13 @@ a {
 
 /* Ajuste de layout para a seção de Envio e Montagem */
 #clientes .split-image-half img {
-    max-height: 420px;
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
+}
+
+#clientes .split-half {
+    align-items: stretch;
 }
 
 
