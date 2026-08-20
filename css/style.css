@@ -273,7 +273,7 @@ a {
 
 .cargo-title {
     font-family: var(--font-heading);
-    font-size: 30px;
+    font-size: 100px;
     line-height: 0.9;
     font-style: italic;
     margin-bottom: 20px;
@@ -480,19 +480,15 @@ a {
 }
 
 .logo-box {
-    border: none;
-    min-height: 100px;
+    border: 1px solid #EEEEEE;
+    height: 120px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     font-family: var(--font-heading);
-    font-size: 23px;
-    color: #999999;
+    font-size: 24px;
+    color: var(--text-grey);
     text-transform: uppercase;
-    padding: 15px 20px;
-    background: transparent;
-    white-space: nowrap;
-    letter-spacing: 0.5px;
 }
 
 /* FAQ Section */
@@ -841,11 +837,6 @@ a {
 
     .logos-grid {
         grid-template-columns: 1fr;
-    }
-
-    .logos-grid ul {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
     }
 
     .logo-box {
