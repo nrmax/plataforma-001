@@ -790,6 +790,11 @@ a {
         padding: 10px 20px 0 !important;
     }
 
+    #servicos .split-content {
+        padding-top: 10px !important;
+        padding-bottom: 40px !important;
+    }
+
     #compatibilidade .split-image-half img {
         height: 300px;
         width: auto;
