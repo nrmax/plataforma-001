@@ -481,17 +481,18 @@ a {
 
 .logo-box {
     border: none;
-    min-height: 100px;
+    min-height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: var(--font-heading);
-    font-size: 13px;
+    font-size: 11px;
     color: #999999;
     text-transform: uppercase;
-    padding: 25px 15px;
+    padding: 20px 10px;
     background: transparent;
     white-space: nowrap;
+    letter-spacing: 0.5px;
 }
 
 /* FAQ Section */
