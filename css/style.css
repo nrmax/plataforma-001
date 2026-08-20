@@ -480,16 +480,17 @@ a {
 }
 
 .logo-box {
-    border: 1px solid #EEEEEE;
-    min-height: 140px;
+    border: none;
+    min-height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: var(--font-heading);
-    font-size: 15px;
-    color: var(--text-grey);
+    font-size: 14px;
+    color: #999999;
     text-transform: uppercase;
-    padding: 20px;
+    padding: 25px 15px;
+    background: transparent;
 }
 
 /* FAQ Section */
@@ -841,7 +842,8 @@ a {
     }
 
     .logos-grid ul {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 
     .logo-box {
