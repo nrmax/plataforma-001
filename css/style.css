@@ -762,11 +762,11 @@ a {
 
     .split-image-half {
         width: 100%;
-        min-height: 250px;
+        min-height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 10px 20px;
+        padding: 0;
         background-color: transparent;
     }
 
@@ -798,8 +798,12 @@ a {
         text-align: left;
     }
 
+    .split-section {
+        min-height: auto;
+    }
+
     .split-content {
-        padding: 20px 20px;
+        padding: 15px 20px;
         text-align: left;
     }
 
