@@ -179,37 +179,33 @@
             <h2 class="section-title" style="text-align: center;">PERGUNTAS FREQUENTES (FAQ)</h2>
             <div class="faq-list">
                 <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFaq(this)">
+                    <div class="faq-question">
                         <span>1. O equipamento atende à NR-12?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
+                    </div>
                     <div class="faq-answer">
                         <p>Sim, o projeto segue as diretrizes de segurança para movimentação de cargas.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFaq(this)">
+                    <div class="faq-question">
                         <span>2. É necessário obra civil para instalação?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
+                    </div>
                     <div class="faq-answer">
                         <p>Não, requer somente chumbamento no piso.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFaq(this)">
+                    <div class="faq-question">
                         <span>3. Como funciona o envio (Frete)?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
+                    </div>
                     <div class="faq-answer">
                         <p>Devido às dimensões e peso do equipamento, o envio é feito via Transportadora especializada. Consulte-nos no campo de perguntas informando seu CEP para cotarmos o frete exato para o seu CNPJ/CPF.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFaq(this)">
+                    <div class="faq-question">
                         <span>4. Vocês fazem a instalação?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
+                    </div>
                     <div class="faq-answer">
                         <p>O equipamento segue com manual de instrução, indicamos um profissional qualificado.</p>
                     </div>
@@ -268,22 +264,6 @@
     </footer>
 
     <script>
-        function toggleFaq(button) {
-            const answer = button.nextElementSibling;
-            const allAnswers = document.querySelectorAll('.faq-answer');
-            const allButtons = document.querySelectorAll('.faq-question');
-
-            allAnswers.forEach(a => {
-                if (a !== answer) a.classList.remove('open');
-            });
-            allButtons.forEach(b => {
-                if (b !== button) b.classList.remove('active');
-            });
-
-            answer.classList.toggle('open');
-            button.classList.toggle('active');
-        }
-
         function enviarWhatsApp(event) {
             event.preventDefault();
             const nome = document.getElementById('nome').value;
