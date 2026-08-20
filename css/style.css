@@ -481,7 +481,15 @@ a {
 }
 
 .section-yellow .split-image-half img {
-    object-fit: contain; /* Like the reference player with transparent background */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#servicos .split-image-half img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 /* Trainers / Experiência Section (Dark) */
