@@ -47,7 +47,7 @@ a {
     justify-content: center;
     padding: 12px 35px;
     font-family: var(--font-heading);
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
     border-radius: 50px; /* Pill shape identical to reference */
