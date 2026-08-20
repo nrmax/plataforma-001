@@ -913,7 +913,9 @@ a {
 }
 
 .faq-contact-btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     padding: 16px 36px;
     background-color: #22c55e;
     color: #ffffff;
