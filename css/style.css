@@ -395,11 +395,19 @@ a {
 .section-yellow .section-title {
     color: var(--black);
     margin-bottom: 8px;
+    font-size: 32px;
+    line-height: 1.2;
 }
 
 .section-yellow .section-subtitle {
     color: var(--black);
     margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.section-yellow h3.section-subtitle {
+    font-size: 20px;
 }
 
 .app-buttons {
@@ -456,6 +464,13 @@ a {
 
 .section-dark .section-title {
     color: var(--white);
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.section-dark .section-subtitle {
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 .section-dark .hero-buttons {
@@ -469,6 +484,13 @@ a {
 
 .section-white .section-title {
     color: var(--black);
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.section-white .section-subtitle {
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 .logos-grid {
@@ -499,12 +521,16 @@ a {
 
 .newsletter-section .section-title {
     color: var(--black);
+    font-size: 32px;
+    line-height: 1.2;
 }
 
 .newsletter-section .section-subtitle {
     color: var(--black);
     max-width: 600px;
     margin: 0 auto 40px;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 .form-container {
@@ -603,7 +629,7 @@ a {
     }
 
     .section-title {
-        font-size: 36px;
+        font-size: 28px;
     }
 
     .cargo-title {
@@ -670,11 +696,12 @@ a {
     }
 
     .section-title {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .section-subtitle {
-        font-size: 13px;
+        font-size: 14px;
+        line-height: 1.5;
     }
 
     .split-content {
@@ -739,7 +766,7 @@ a {
     }
 
     .section-title {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .btn {
@@ -770,7 +797,7 @@ a {
 }
 
 .faq-title {
-    font-size: 44px;
+    font-size: 36px;
     font-weight: 800;
     color: #1a1a1a;
     margin-bottom: 20px;
@@ -778,11 +805,11 @@ a {
 }
 
 .faq-subtitle {
-    font-size: 16px;
+    font-size: 15px;
     color: #666;
     max-width: 650px;
     margin: 0 auto;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 .faq-content {
@@ -798,11 +825,11 @@ a {
 }
 
 .faq-questions-title {
-    font-size: 34px;
+    font-size: 26px;
     font-weight: 700;
     color: #1a1a1a;
     margin-bottom: 20px;
-    line-height: 1.3;
+    line-height: 1.2;
 }
 
 .faq-questions-text {
@@ -876,7 +903,7 @@ a {
 
 .faq-question span:nth-child(2) {
     flex: 1;
-    font-size: 19px;
+    font-size: 16px;
     font-weight: 600;
     color: #1a1a1a;
     line-height: 1.6;
@@ -905,9 +932,9 @@ a {
 }
 
 .faq-answer p {
-    font-size: 17px;
+    font-size: 15px;
     color: #666;
-    line-height: 1.6;
+    line-height: 1.5;
     margin: 0;
 }
 
@@ -928,11 +955,11 @@ a {
     }
     
     .faq-title {
-        font-size: 36px;
+        font-size: 30px;
     }
     
     .faq-questions-title {
-        font-size: 30px;
+        font-size: 22px;
     }
 }
 
@@ -942,7 +969,7 @@ a {
     }
     
     .faq-title {
-        font-size: 30px;
+        font-size: 26px;
     }
     
     .faq-header {
@@ -950,7 +977,7 @@ a {
     }
     
     .faq-questions-title {
-        font-size: 28px;
+        font-size: 20px;
     }
     
     .faq-question {
@@ -969,11 +996,11 @@ a {
     }
     
     .faq-question span:nth-child(2) {
-        font-size: 17px;
+        font-size: 15px;
     }
     
     .faq-answer p {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
