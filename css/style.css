@@ -802,8 +802,15 @@ a {
         margin: 0 auto !important;
     }
 
+    #clientes .split-image-half {
+        min-height: auto;
+        height: auto;
+        padding: 10px 20px 0;
+    }
+
     #clientes .split-content {
         text-align: left;
+        padding-top: 0;
     }
 
     .split-content {
