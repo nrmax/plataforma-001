@@ -5,7 +5,8 @@ git push
 
 
 
-
+"Ficou grande demais, diminua 2px de tudo."
+"Ainda está pequeno, aumente mais 1px."
 
 
 Analise as alterações que fiz no código. Em seguida, rode os comandos no terminal para salvar e enviar ao GitHub:

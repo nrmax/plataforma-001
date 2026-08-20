@@ -907,7 +907,7 @@ a {
 }
 
 .faq-questions-title {
-    font-size: 36px;
+    font-size: 34px;
     font-weight: 700;
     color: #1a1a1a;
     margin-bottom: 20px;
@@ -985,9 +985,10 @@ a {
 
 .faq-question span:nth-child(2) {
     flex: 1;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 600;
     color: #1a1a1a;
+    line-height: 1.6;
 }
 
 .faq-arrow {
@@ -1013,9 +1014,9 @@ a {
 }
 
 .faq-answer p {
-    font-size: 16px;
+    font-size: 17px;
     color: #666;
-    line-height: 1.7;
+    line-height: 1.6;
     margin: 0;
 }
 
@@ -1058,7 +1059,7 @@ a {
     }
     
     .faq-questions-title {
-        font-size: 26px;
+        font-size: 28px;
     }
     
     .faq-question {
@@ -1077,10 +1078,10 @@ a {
     }
     
     .faq-question span:nth-child(2) {
-        font-size: 16px;
+        font-size: 17px;
     }
     
     .faq-answer p {
-        font-size: 15px;
+        font-size: 16px;
     }
 }
