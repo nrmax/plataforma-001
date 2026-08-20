@@ -661,9 +661,11 @@ a {
     }
 
     .split-image-half img {
-        width: 100%;
-        height: 100%;
+        width: auto;
+        max-width: 100%;
+        height: 300px;
         object-fit: contain;
+        margin: 0 auto;
     }
 
     .logos-grid {
@@ -754,12 +756,16 @@ a {
     }
 
     .split-image-half img {
-        width: 100%;
-        height: 100%;
+        width: auto;
+        max-width: 100%;
+        height: 250px;
         object-fit: contain;
+        margin: 0 auto;
     }
 
+    #compatibilidade .split-image-half img,
     #clientes .split-image-half img {
+        height: 250px;
         object-fit: contain;
     }
 
