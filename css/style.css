@@ -785,9 +785,9 @@ a {
     }
 
     #servicos .split-image-half {
-        min-height: auto;
-        height: auto;
-        padding: 10px 20px 0;
+        min-height: auto !important;
+        height: auto !important;
+        padding: 10px 20px 0 !important;
     }
 
     #compatibilidade .split-image-half img {
