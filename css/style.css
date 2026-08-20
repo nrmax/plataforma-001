@@ -481,14 +481,15 @@ a {
 
 .logo-box {
     border: 1px solid #EEEEEE;
-    height: 120px;
+    min-height: 140px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: var(--font-heading);
-    font-size: 24px;
+    font-size: 15px;
     color: var(--text-grey);
     text-transform: uppercase;
+    padding: 20px;
 }
 
 /* FAQ Section */
