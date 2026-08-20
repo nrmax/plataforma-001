@@ -481,12 +481,12 @@ a {
 
 .logo-box {
     border: none;
-    min-height: 80px;
+    min-height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: var(--font-heading);
-    font-size: 26px;
+    font-size: 56px;
     color: #999999;
     text-transform: uppercase;
     padding: 20px 10px;
