@@ -357,7 +357,7 @@ a {
 /* Split Section Layout */
 .split-section {
     display: flex;
-    min-height: 450px;
+    min-height: 420px;
     width: 100%;
 }
 
@@ -1025,7 +1025,7 @@ a {
 
 /* Ajuste de layout para a seção de Envio e Montagem */
 #clientes .split-image-half img {
-    max-height: 450px;
+    max-height: 420px;
     width: 100%;
     height: auto;
     object-fit: cover;
