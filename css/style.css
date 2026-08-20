@@ -750,63 +750,42 @@ a {
     }
 
     .split-image-half {
+        width: 100%;
+        min-height: 250px;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 20px;
+        padding: 10px 20px;
+        background-color: transparent;
     }
 
     .split-image-half img {
         width: auto;
-        max-width: 100%;
-        height: 250px;
+        max-width: 90%;
+        height: 300px;
         object-fit: contain;
         display: block;
         margin: 0 auto;
-    }
-
-    #compatibilidade .split-image-half,
-    #clientes .split-image-half {
-        height: auto;
-        min-height: 250px;
-        padding: 20px;
     }
 
     #compatibilidade .split-image-half img,
     #clientes .split-image-half img {
-        height: 250px;
+        height: 300px;
         width: auto;
-        max-width: 100%;
+        max-width: 90%;
         object-fit: contain;
         display: block;
         margin: 0 auto;
+        margin-left: 0 !important;
     }
 
     #clientes .split-content {
         text-align: left;
     }
 
-    #compatibilidade .split-image-half img,
-    #clientes .split-image-half img {
-        margin-left: 0 !important;
-    }
-
     .split-content {
         padding: 40px 20px;
         text-align: left;
-    }
-
-    .split-image-half {
-        height: 250px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .split-image-half img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
     }
 
     .form-container {
