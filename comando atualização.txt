@@ -1,3 +1,28 @@
 git add .
 git commit -m "Descrição da alteração"
 git push
+
+
+
+
+
+
+
+Analise as alterações que fiz no código. Em seguida, rode os comandos no terminal para salvar e enviar ao GitHub:
+
+1. git add .
+2. git commit -m "feat: [aqui você escreve a mensagem baseada nas mudanças que viu]"
+3. git push
+
+Por favor, execute os comandos e me avise quando terminar.
+
+
+
+
+
+
+
+Preciso reverter o arquivo `index.html` (todo o projeto) para o estado anterior.
+
+Preciso reverter o arquivo `index.html` (todo o projeto) para o estado em que ele estava em uma data e hora específicas. 
+

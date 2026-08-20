@@ -160,6 +160,71 @@
         </div>
     </section>
 
+    <!-- ========== FAQ SECTION ========== -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="faq-header">
+                <span class="faq-tag">FAQ</span>
+                <h2 class="faq-title">Perguntas Frequentes</h2>
+                <p class="faq-subtitle">Tire suas dúvidas sobre nossa plataforma de carga e nossos serviços.</p>
+            </div>
+            <div class="faq-content">
+                <div class="faq-left">
+                    <h3 class="faq-questions-title">Tem Alguma Dúvida?</h3>
+                    <p class="faq-questions-text">
+                        Não encontrou a resposta que procurava? Entre em contato conosco pelo WhatsApp e nossa equipe terá prazer em ajudar.
+                    </p>
+                    <a href="https://wa.me/5511996272376?text=Olá!%20Tenho%20uma%20dúvida%20sobre%20a%20plataforma%20de%20carga." 
+                       class="faq-contact-btn" target="_blank" rel="noopener">
+                        Fale Conosco
+                    </a>
+                </div>
+                <div class="faq-right">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="faq-icon">?</span>
+                            <span>Qual a capacidade máxima da plataforma?</span>
+                            <span class="faq-arrow">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Nossa plataforma possui capacidade de até <strong>600 kg</strong>, ideal para movimentação de cargas entre mezaninos e docas com total segurança.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="faq-icon">?</span>
+                            <span>Qual a altura máxima de elevação?</span>
+                            <span class="faq-arrow">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>A plataforma eleva cargas até <strong>3 metros de altura</strong>, perfeita para operações entre dois níveis industriais ou comerciais.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="faq-icon">?</span>
+                            <span>A montagem está inclusa no valor?</span>
+                            <span class="faq-arrow">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>A montagem <strong>não está inclusa</strong> no valor do produto. Fornecemos um guia completo de montagem ou podemos indicar profissionais qualificados da nossa equipe (valor sob consulta).</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="faq-icon">?</span>
+                            <span>Vocês fabricam sob medida?</span>
+                            <span class="faq-arrow">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sim! Trabalhamos com <strong>projetos exclusivos sob medida</strong> para atender as necessidades específicas do seu espaço e operação. Solicite um orçamento personalizado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Section 5 (Reference: NEWSLETTER - Yellow Background Form) -->
     <section id="contatos" class="newsletter-section">
         <div class="container">
@@ -202,6 +267,22 @@
     </footer>
 
     <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                document.querySelectorAll('.faq-item').forEach(faqItem => {
+                    faqItem.classList.remove('active');
+                });
+                
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
         function enviarWhatsApp(event) {
             event.preventDefault();
             const nome = document.getElementById('nome').value;
