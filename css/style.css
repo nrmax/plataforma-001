@@ -27,6 +27,7 @@ body {
     color: var(--text-grey);
     line-height: 1.6;
     background-color: var(--white);
+    overflow-x: hidden;
 }
 
 a {
