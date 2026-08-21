@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://plataforma.nrmax.com.br/sitemap.xml
