@@ -7,6 +7,7 @@ git add, git commit e git push
 "Ainda está pequeno, aumente mais 1px."
 
 
+
 Analise as alterações que fiz no código. Em seguida, rode os comandos no terminal para salvar e enviar ao GitHub:
 
 1. git add .
