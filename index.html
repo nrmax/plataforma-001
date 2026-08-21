@@ -247,7 +247,7 @@
                     <p class="faq-questions-text">
                         Não encontrou a resposta que procurava? Entre em contato conosco pelo WhatsApp e nossa equipe terá prazer em ajudar você com todas as suas questões.
                     </p>
-                    <a href="https://wa.me/5511996272376?text=Olá!%20Tenho%20uma%20dúvida%20sobre%20a%20plataforma%20de%20carga." 
+                    <a href="https://wa.me/5511996272376?text=Olá!%20Tenho%20uma%20dúvida%20sobre%20a%20plataforma%20de%20carga.%0A%0AVeio%20do%20site:%20plataforma-001" 
                        class="faq-contact-btn" target="_blank" rel="noopener">
                         <i class="fab fa-whatsapp"></i> Fale Conosco
                     </a>
@@ -409,7 +409,8 @@
                 `*Email:* ${email}\n` +
                 `*Telefone:* ${telefone}\n` +
                 `*Empresa:* ${empresa}\n` +
-                `*Detalhes:* ${detalhes}`;
+                `*Detalhes:* ${detalhes}\n\n` +
+                `_Veio do site: plataforma-001_`;
 
             const url = `https://wa.me/5511996272376?text=${encodeURIComponent(mensagem)}`;
             window.open(url, '_blank');
