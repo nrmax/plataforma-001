@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "name": "nrmax-contracts",
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/webhook/infinitypay",
+      "dest": "/api/webhook/infinitypay.js"
+    },
+    {
+      "src": "/api/webhook/signature",
+      "dest": "/api/webhook/signature.js"
+    },
+    {
+      "src": "/api/contracts/status/(.*)",
+      "dest": "/api/contracts/status.js"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/server.js"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
+}

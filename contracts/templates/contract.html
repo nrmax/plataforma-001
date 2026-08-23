@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contrato de Compra - NRMAX</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 12pt;
+      line-height: 1.6;
+      color: #333;
+      padding: 40px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+      border-bottom: 3px solid #FADB14;
+      padding-bottom: 20px;
+    }
+
+    .logo {
+      font-size: 28pt;
+      font-weight: bold;
+      color: #1A1A1A;
+      letter-spacing: 2px;
+    }
+
+    .logo span {
+      color: #FADB14;
+    }
+
+    .subtitle {
+      font-size: 10pt;
+      color: #666;
+      margin-top: 5px;
+    }
+
+    .contract-info {
+      background: #f8f9fa;
+      padding: 15px 20px;
+      border-radius: 8px;
+      margin-bottom: 25px;
+      border-left: 4px solid #FADB14;
+    }
+
+    .contract-info strong {
+      color: #1A1A1A;
+    }
+
+    .section {
+      margin-bottom: 25px;
+    }
+
+    .section-title {
+      font-size: 13pt;
+      font-weight: bold;
+      color: #1A1A1A;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .field-row {
+      display: flex;
+      margin-bottom: 8px;
+    }
+
+    .field-label {
+      font-weight: 600;
+      color: #555;
+      min-width: 180px;
+    }
+
+    .field-value {
+      color: #333;
+    }
+
+    .product-box {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 15px 0;
+    }
+
+    .product-box h4 {
+      color: #1A1A1A;
+      margin-bottom: 15px;
+      font-size: 12pt;
+    }
+
+    .specs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .spec-item {
+      padding: 8px 12px;
+      background: #f8f9fa;
+      border-radius: 4px;
+    }
+
+    .spec-item .label {
+      font-size: 9pt;
+      color: #666;
+      display: block;
+    }
+
+    .spec-item .value {
+      font-weight: 600;
+      color: #1A1A1A;
+    }
+
+    .value-highlight {
+      font-size: 18pt;
+      font-weight: bold;
+      color: #1A1A1A;
+      text-align: center;
+      padding: 15px;
+      background: #FADB14;
+      border-radius: 8px;
+      margin: 15px 0;
+    }
+
+    .clauses {
+      text-align: justify;
+    }
+
+    .clauses p {
+      margin-bottom: 12px;
+      text-indent: 20px;
+    }
+
+    .signature-area {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .signature-block {
+      flex: 1;
+      text-align: center;
+      padding-top: 60px;
+      border-top: 1px solid #333;
+    }
+
+    .signature-block .name {
+      font-weight: bold;
+      color: #1A1A1A;
+    }
+
+    .signature-block .role {
+      font-size: 9pt;
+      color: #666;
+    }
+
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 2px solid #FADB14;
+      text-align: center;
+      font-size: 9pt;
+      color: #666;
+    }
+
+    .footer p {
+      margin-bottom: 5px;
+    }
+
+    .digital-info {
+      background: #e8f5e9;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+      font-size: 9pt;
+    }
+
+    .digital-info strong {
+      color: #2e7d32;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">NR<span>MAX</span></div>
+    <div class="subtitle">Solucoes em Plataformas Elevatorias e Estruturas Metalicas</div>
+  </div>
+
+  <div class="contract-info">
+    <div class="field-row">
+      <span class="field-label">Numero do Contrato:</span>
+      <span class="field-value"><strong>{{contractNumber}}</strong></span>
+    </div>
+    <div class="field-row">
+      <span class="field-label">Data de Emissao:</span>
+      <span class="field-value">{{issueDate}}</span>
+    </div>
+    <div class="field-row">
+      <span class="field-label">Numero do Pedido:</span>
+      <span class="field-value">{{orderNumber}}</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3 class="section-title">1. DADOS DO COMPRADOR</h3>
+    <div class="field-row">
+      <span class="field-label">Nome/Razao Social:</span>
+      <span class="field-value">{{customerName}}</span>
+    </div>
+    <div class="field-row">
+      <span class="field-label">CPF/CNPJ:</span>
+      <span class="field-value">{{customerDocument}}</span>
+    </div>
+    <div class="field-row">
+      <span class="field-label">Email:</span>
+      <span class="field-value">{{customerEmail}}</span>
+    </div>
+    <div class="field-row">
+      <span class="field-label">Telefone:</span>
+      <span class="field-value">{{customerPhone}}</span>
+    </div>
+    {{#if customerAddress}}
+    <div class="field-row">
+      <span class="field-label">Endereco:</span>
+      <span class="field-value">{{customerAddress}}</span>
+    </div>
+    {{/if}}
+    {{#if customerCity}}
+    <div class="field-row">
+      <span class="field-label">Cidade/UF:</span>
+      <span class="field-value">{{customerCity}} - {{customerState}}</span>
+    </div>
+    {{/if}}
+  </div>
+
+  <div class="section">
+    <h3 class="section-title">2. OBJETO DO CONTRATO</h3>
+    <div class="product-box">
+      <h4>{{productName}}</h4>
+      <div class="specs-grid">
+        <div class="spec-item">
+          <span class="label">Capacidade</span>
+          <span class="value">{{capacity}}</span>
+        </div>
+        <div class="spec-item">
+          <span class="label">Altura de Elevacao</span>
+          <span class="value">{{height}}</span>
+        </div>
+        <div class="spec-item">
+          <span class="label">Dimensoes Uteis</span>
+          <span class="value">{{dimensions}}</span>
+        </div>
+        <div class="spec-item">
+          <span class="label">Velocidade</span>
+          <span class="value">{{speed}}</span>
+        </div>
+        <div class="spec-item">
+          <span class="label">Nivel de Ruido</span>
+          <span class="value">{{noiseLevel}}</span>
+        </div>
+        <div class="spec-item">
+          <span class="label">Caracteristicas</span>
+          <span class="value">{{features}}</span>
+        </div>
+      </div>
+      {{#if customizations}}
+      <div style="margin-top: 15px; padding: 10px; background: #fff3cd; border-radius: 4px;">
+        <strong>Personalizacoes:</strong> {{customizations}}
+      </div>
+      {{/if}}
+    </div>
+  </div>
+
+  <div class="section">
+    <h3 class="section-title">3. VALOR E CONDICOES DE PAGAMENTO</h3>
+    <div class="value-highlight">
+      VALOR TOTAL: {{totalValue}}
+    </div>
+    <div class="field-row">
+      <span class="field-label">Forma de Pagamento:</span>
+      <span class="field-value">{{paymentMethod}}</span>
+    </div>
+    {{#if installments}}
+    <div class="field-row">
+      <span class="field-label">Parcelas:</span>
+      <span class="field-value">{{installments}}</span>
+    </div>
+    {{/if}}
+    <div class="field-row">
+      <span class="field-label">Data da Transacao:</span>
+      <span class="field-value">{{transactionDate}}</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3 class="section-title">4. PRAZO DE ENTREGA</h3>
+    <div class="field-row">
+      <span class="field-label">Prazo de Entrega:</span>
+      <span class="field-value">{{deliveryDeadline}} dias uteis apos confirmacao do pagamento</span>
+    </div>
+    <div class="field-row">
+      <span class="field-label">Data Estimada:</span>
+      <span class="field-value">{{estimatedDeliveryDate}}</span>
+    </div>
+  </div>
+
+  <div class="section clauses">
+    <h3 class="section-title">5. CLAUSULAS E CONDICOES</h3>
+    
+    <p><strong>5.1.</strong> O presente contrato regula a compra e venda do equipamento descrito acima, nas condicoes estabelecidas pelas partes.</p>
+    
+    <p><strong>5.2.</strong> A NRMAX se compromete a entregar o equipamento no prazo estipulado, sujeito a disponibilidade de estoque e condicoes logisticas.</p>
+    
+    <p><strong>5.3.</strong> O equipamento sera entregue com manual de montagem e operacao. A montagem nao esta inclusa no valor, podendo ser contratada separadamente.</p>
+    
+    <p><strong>5.4.</strong> O equipamento possui garantia de fabricacao contra defeitos de material e mao de obra, conforme termos especificos.</p>
+    
+    <p><strong>5.5.</strong> Para cancelamento ou devolucao, o comprador devera entrar em contato no prazo de 7 (sete) dias apos o recebimento.</p>
+    
+    <p><strong>5.6.</strong> As partes elegem o foro da Comarca de Sao Paulo para dirimir quaisquer questoes oriundas do presente contrato.</p>
+  </div>
+
+  <div class="signature-area">
+    <div class="signature-block">
+      <div class="name">NRMAX Solucoes Ltda</div>
+      <div class="role">Representante Legal</div>
+    </div>
+    <div class="signature-block">
+      <div class="name">{{customerName}}</div>
+      <div class="role">Comprador</div>
+    </div>
+  </div>
+
+  <div class="digital-info">
+    <strong>Assinatura Eletronica:</strong> Este documento sera encaminhado para assinatura eletronica via SuperSign, com validade juridica conforme MP 2.200-2/2001 e Lei 14.063/2020.
+  </div>
+
+  <div class="footer">
+    <p><strong>NRMAX</strong> - Solucoes em Plataformas Elevatorias e Estruturas Metalicas</p>
+    <p>CNPJ: XX.XXX.XXX/0001-XX | São Paulo - SP</p>
+    <p>Contrato gerado automaticamente em {{issueDateTime}}</p>
+    <p>Documento: {{contractNumber}}</p>
+  </div>
+</body>
+</html>
