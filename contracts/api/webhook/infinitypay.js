@@ -123,8 +123,8 @@ function extractOrderData(payload) {
 }
 
 function verifyInfinityPaySignature(payload, signature) {
-  if (!config.infinitypay.webhookSecret) {
-    console.warn('Webhook secret da InfinityPay nao configurado');
+  if (!config.infinitypay.webhookSecret || config.infinitypay.webhookSecret === 'sua_chave_secreta_aqui') {
+    console.warn('Webhook secret da InfinityPay nao configurado - pulando verificacao');
     return true;
   }
 
