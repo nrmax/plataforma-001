@@ -22,67 +22,55 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Schema Markup -->
+    <!-- Schema Markup Avançada -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "Plataforma Elevatória de Carga 600kg 3m",
-      "image": "https://plataforma.nrmax.com.br/assets/images/plataforma-elevatoria-carga-industrial-nrmax.png",
-      "description": "Plataforma de carga compacta e resistente, desenvolvida para movimentação vertical de cargas entre dois níveis, com elevação de até 3 metros e capacidade de até 600 kg.",
-      "brand": {
-        "@type": "Brand",
-        "name": "NRmax"
-      },
-      "offers": {
-        "@type": "Offer",
-        "url": "https://plataforma.nrmax.com.br/",
-        "priceCurrency": "BRL",
-        "availability": "https://schema.org/InStock",
-        "seller": {
-          "@type": "Organization",
-          "name": "NRmax"
-        }
-      }
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
+      "@graph": [
         {
-          "@type": "Question",
-          "name": "Qual a capacidade máxima da plataforma?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Nossa plataforma possui capacidade de até 600 kg, ideal para movimentação de cargas entre mezaninos e docas com total segurança."
+          "@type": "Product",
+          "name": "Plataforma Elevatória de Carga NRmax 600kg",
+          "image": "https://plataforma.nrmax.com.br/assets/images/cargo_lift.png",
+          "description": "Plataforma de carga compacta e resistente para movimentação vertical entre dois níveis. Capacidade de 600kg, elevação de 3 metros, baixo ruído (45dB) e estrutura reforçada.",
+          "brand": { "@type": "Brand", "name": "NRmax" },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://plataforma.nrmax.com.br/",
+            "priceCurrency": "BRL",
+            "availability": "https://schema.org/InStock",
+            "seller": { "@type": "Organization", "name": "NRmax" }
           }
         },
         {
-          "@type": "Question",
-          "name": "Qual a altura máxima de elevação?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A plataforma eleva cargas até 3 metros de altura, perfeita para operações entre dois níveis industriais ou comerciais."
-          }
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Qual a capacidade e altura da plataforma de carga NRmax?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Nossa plataforma de carga possui capacidade para até 600 kg e elevação máxima de 3 metros, sendo a solução ideal para elevador de carga para mezanino, docas e ambientes industriais." }
+            },
+            {
+              "@type": "Question",
+              "name": "A plataforma de carga faz muito barulho?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Não. O sistema foi projetado para operar com baixo nível de ruído, de aproximadamente 45 dB, garantindo conforto acústico em condomínios, indústrias e ambientes internos." }
+            },
+            {
+              "@type": "Question",
+              "name": "Vocês fazem a instalação da plataforma elevatória?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Fornecemos o guia completo de montagem. Além disso, indicamos profissionais de confiança ou oferecemos o serviço de instalação pela nossa própria equipe técnica especializada (valor sob consulta)." }
+            },
+            {
+              "@type": "Question",
+              "name": "É possível fabricar a plataforma de carga sob medida?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Sim. A NRmax desenvolve projetos exclusivos de plataformas elevatórias sob medida para atender às necessidades específicas de espaço e operação do seu condomínio ou empresa." }
+            }
+          ]
         },
         {
-          "@type": "Question",
-          "name": "A montagem está inclusa no valor?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A montagem não está inclusa no valor do produto. Fornecemos um guia completo de montagem ou podemos indicar profissionais qualificados da nossa equipe (valor sob consulta)."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Vocês fabricam sob medida?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sim! Trabalhamos com projetos exclusivos sob medida para atender as necessidades específicas do seu espaço e operação. Solicite um orçamento personalizado."
-          }
+          "@type": "LocalBusiness",
+          "name": "NRmax Plataformas de Carga",
+          "address": { "@type": "PostalAddress", "addressLocality": "São Paulo", "addressRegion": "SP", "addressCountry": "BR" },
+          "url": "https://plataforma.nrmax.com.br/"
         }
       ]
     }
@@ -94,7 +82,7 @@
     <header class="header">
         <div class="container">
             <div class="logo">
-                <img src="assets/images/logo.png" alt="NRmax Logo" class="logo-img">
+                <img src="assets/images/logo.png" alt="Logo NRmax Plataforma de Carga" class="logo-img" loading="lazy">
             </div>
             <div class="nav">
                 <ul class="nav-links">
@@ -112,7 +100,7 @@
     <section id="home" class="cargo-banner">
         <div class="cargo-container">
             <div class="cargo-image" style="margin-left: -5%;">
-                <img src="assets/images/plataforma-elevatoria-carga-industrial-nrmax.png" alt="Plataforma elevatória de carga industrial NRmax sob medida">
+                <img src="assets/images/plataforma-elevatoria-carga-industrial-nrmax.png" alt="Plataforma elevatória de carga 600kg NRmax em aço reforçado" loading="eager">
             </div>
             <div class="cargo-content">
                 <div class="cargo-top-text">
@@ -159,7 +147,7 @@
     <section id="servicos" class="split-section section-yellow">
         <div class="split-half split-image-half">
             <!-- Using engineer image, simulating the player on the left -->
-            <img src="assets/images/plataforma-de-carga-nrmax.png" alt="Plataforma de carga NRmax" loading="lazy">
+            <img src="assets/images/plataforma-de-carga-nrmax.png" alt="Plataforma de carga NRmax 600kg para mezaninos e docas" loading="lazy">
         </div>
         <div class="split-half">
             <div class="split-content" style="max-width: 100%; padding: 10px 5% 40px 5%;">
@@ -202,7 +190,28 @@
             </div>
         </div>
         <div class="split-half split-image-half">
-            <img src="assets/images/plataforma-elevatoria-carga-industrial-nrmax.png" alt="Plataforma elevatória de carga industrial NRmax" loading="lazy" style="margin-left: -5%;">
+            <img src="assets/images/plataforma-elevatoria-carga-industrial-nrmax.png" alt="Dimensões da plataforma elevatória de carga NRmax 3 metros" loading="lazy" style="margin-left: -5%;">
+        </div>
+    </section>
+
+    <!-- Section 3.1 - Diferenciais Técnicos -->
+    <section class="section-white" style="padding: 60px 0;">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 40px;">Por que escolher a Plataforma de Carga NRmax?</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; text-align: center;">
+                <div style="padding: 20px; background: #f8f9fa; border-radius: 8px;">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--black);">Elevador de Carga para Mezanino</h3>
+                    <p style="font-size: 0.95rem; color: #666;">Solução perfeita e segura para otimizar o fluxo logístico entre pavimentos em indústrias e galpões.</p>
+                </div>
+                <div style="padding: 20px; background: #f8f9fa; border-radius: 8px;">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--black);">Estrutura Reforçada e Segura</h3>
+                    <p style="font-size: 0.95rem; color: #666;">Fabricada com aço de alta resistência, telas de proteção e duplo fim de curso, superando os padrões de segurança do mercado.</p>
+                </div>
+                <div style="padding: 20px; background: #f8f9fa; border-radius: 8px;">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--black);">Manutenção e Durabilidade</h3>
+                    <p style="font-size: 0.95rem; color: #666;">Sistema eletro-hidráulico de baixa manutenção, garantindo longa vida útil ao seu equipamento de elevação.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -260,7 +269,7 @@
                             <span class="faq-arrow">▼</span>
                         </div>
                         <div class="faq-answer">
-                            <p>Nossa plataforma possui capacidade de até <strong>600 kg</strong>, ideal para movimentação de cargas entre mezaninos e docas com total segurança.</p>
+                            <p>Nossa plataforma de carga possui capacidade robusta para até <strong>600 kg</strong>. É a escolha ideal para quem busca um <strong>elevador de carga para mezanino</strong>, docas de caminhão ou ambientes industriais, garantindo transporte vertical seguro e eficiente.</p>
                         </div>
                     </div>
                     <div class="faq-item">
@@ -270,7 +279,7 @@
                             <span class="faq-arrow">▼</span>
                         </div>
                         <div class="faq-answer">
-                            <p>A plataforma eleva cargas até <strong>3 metros de altura</strong>, perfeita para operações entre dois níveis industriais ou comerciais.</p>
+                            <p>O equipamento realiza a elevação de cargas até <strong>3 metros de altura</strong>. Essa especificação é perfeita para operações logísticas entre dois níveis, funcionando como uma <strong>plataforma elevatória</strong> de alto desempenho.</p>
                         </div>
                     </div>
                     <div class="faq-item">
@@ -280,7 +289,7 @@
                             <span class="faq-arrow">▼</span>
                         </div>
                         <div class="faq-answer">
-                            <p>A montagem <strong>não está inclusa</strong> no valor do produto. Fornecemos um guia completo de montagem ou podemos indicar profissionais qualificados da nossa equipe (valor sob consulta).</p>
+                            <p>A montagem <strong>não está inclusa</strong> no valor base do produto. No entanto, entregamos um guia técnico completo de montagem mecânica. Para maior praticidade e segurança, você pode contratar a instalação diretamente pela nossa <strong>equipe técnica especializada NRmax</strong> (orçamento sob consulta).</p>
                         </div>
                     </div>
                     <div class="faq-item">
@@ -290,7 +299,7 @@
                             <span class="faq-arrow">▼</span>
                         </div>
                         <div class="faq-answer">
-                            <p>Sim! Trabalhamos com <strong>projetos exclusivos sob medida</strong> para atender as necessidades específicas do seu espaço e operação. Solicite um orçamento personalizado.</p>
+                            <p>Sim! A <strong>NRmax</strong> é especializada em desenvolver projetos de <strong>plataformas elevatórias sob medida</strong>. Adaptamos as dimensões e capacidades para atender às necessidades específicas de espaço e operação do seu condomínio, indústria ou centro de distribuição.</p>
                         </div>
                     </div>
                 </div>
@@ -371,6 +380,9 @@
         <div class="container">
             <p style="color: #000; margin-bottom: 10px; font-size: 14px;">
                 Conheça também nosso <a href="https://nrmax.com.br/" target="_blank" rel="noopener" style="color: #000; text-decoration: underline;">site principal</a> com todos os serviços de serralheria e estruturas metálicas.
+            </p>
+            <p style="text-align: center; color: #666; font-size: 0.9rem; margin-bottom: 20px;">
+                A NRmax é referência em fabricação de plataformas de carga, monta-cargas e elevadores industriais, atendendo com excelência em São Paulo (SP) e em todo o território nacional.
             </p>
             <a href="#"><i class="fab fa-facebook-f"></i> FACEBOOK</a>
             <a href="#"><i class="fab fa-twitter"></i> TWITTER</a>
