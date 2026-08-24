@@ -86,12 +86,13 @@ app.get('/', (req, res) => {
   });
 });
 
-const PORT = config.server.port;
-
-app.listen(PORT, () => {
-  console.log(`NRMAX Contracts API rodando na porta ${PORT}`);
-  console.log(`Ambiente: ${config.server.env}`);
-  console.log(`Health check: http://localhost:${PORT}/api/health`);
-});
+if (process.env.NODE_ENV !== 'production') {
+  const PORT = config.server.port;
+  app.listen(PORT, () => {
+    console.log(`NRMAX Contracts API rodando na porta ${PORT}`);
+    console.log(`Ambiente: ${config.server.env}`);
+    console.log(`Health check: http://localhost:${PORT}/api/health`);
+  });
+}
 
 module.exports = app;
