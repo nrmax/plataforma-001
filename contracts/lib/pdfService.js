@@ -4,7 +4,9 @@ const path = require('path');
 
 class PdfService {
   constructor() {
-    this.outputDir = path.join(__dirname, '..', 'tmp');
+    this.outputDir = process.env.NODE_ENV === 'production'
+      ? '/tmp'
+      : path.join(__dirname, '..', 'tmp');
     this.ensureOutputDir();
   }
 
